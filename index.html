@@ -212,6 +212,11 @@
             saveData();
             updateUI();
 
+            // The "Degenerate" Milestone
+            if (count === 15) {
+                alert("Congratulations, you're a degenerate!");
+            }
+
             // Every 3rd pouch...
             if (count % 3 === 0) {
                 unlockNewAnimal();
